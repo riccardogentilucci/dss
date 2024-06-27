@@ -248,7 +248,7 @@ public abstract class XAdESSignatureBuilder extends XAdESBuilder implements Sign
 		return canonicalizedSignedInfo;
 	}
 	
-	private void assertSignaturePossible() {
+	protected void assertSignaturePossible() {
 		if (DomUtils.isDOM(document)) {
 			Document dom = DomUtils.buildDOM(document);
 			final NodeList signatureNodeList = DSSXMLUtils.getAllSignaturesExceptCounterSignatures(dom);

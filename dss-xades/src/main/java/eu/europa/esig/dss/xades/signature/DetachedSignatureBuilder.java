@@ -66,4 +66,7 @@ class DetachedSignatureBuilder extends XAdESSignatureBuilder {
 		return documentDom;
 	}
 
+	@Override
+	protected void assertSignaturePossible() {
+	}
 }
